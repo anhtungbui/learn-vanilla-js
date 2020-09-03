@@ -1,0 +1,29 @@
+main {
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header i {
+  padding-right: 20px;
+}
+
+.three-numbers {
+  font-size: 50px;
+  width: 32%;
+  text-align: center;
+  border-style: none;
+}
+
+.btn-add,
+.btn-clear {
+  width: 100%;
+  font-size: 20px;
+}
+
+.btn-add i,
+.btn-clear i {
+  padding-right: 20px;
+}

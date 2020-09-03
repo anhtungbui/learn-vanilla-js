@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/mdb.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>localStorage 101</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="bg-secondary text-white text-center p-3">
+        <i class="fas fa-database"></i>localStorage 101
+      </h1>
+    </header>
+    <main>
+      <div>
+        <div class="alert alert-danger d-none" id="alert-missing" role="alert">
+          Please enter the missing number(s)!
+        </div>
+        <div class="alert alert-success d-none" id="alert-success" role="alert">
+          All three numbers have been successfully saved to localStorage!
+        </div>
+        <div class="alert alert-warning d-none" id="alert-reload" role="alert">
+          Please reload the browser to see the results!
+        </div>
+        <input
+          type="text"
+          placeholder="0"
+          class="three-numbers"
+          id="firstNum"
+        />
+
+        <input
+          type="text"
+          placeholder="0"
+          class="three-numbers"
+          id="secondNum"
+        />
+
+        <input
+          type="text"
+          placeholder="0"
+          class="three-numbers"
+          id="thirdNum"
+        />
+
+        <button class="btn btn-secondary btn-add">
+          <i class="fas fa-plus"></i>Add To Local Storage
+        </button>
+        <button class="btn btn-danger btn-clear" disabled>
+          <i class="fas fa-trash-alt"></i>
+          Clear Local Storage
+        </button>
+      </div>
+    </main>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
