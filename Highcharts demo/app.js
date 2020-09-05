@@ -1,3 +1,11 @@
+let symbol = '&symbol=GOOG';
+const myKey = config.KEY;
+const apiKey = '&apikey=' + myKey;
+let fetchUrl =
+  'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY' +
+  symbol +
+  apiKey;
+
 let sampleData = {
   name: 'Installation',
   data: [1.2, 2.5, 3.2, 4.6, 5.5],
@@ -10,7 +18,8 @@ let chartData = {
   categories: [],
 };
 
-fetch('./data.json')
+// fetch('./data.json')
+fetch(fetchUrl)
   .then((response) => response.json())
   .then((data) => {
     const historyData = data['Time Series (Daily)'];
