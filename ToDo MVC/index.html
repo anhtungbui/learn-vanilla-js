@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>ToDo MVC</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="bg-primary text-white text-center p-2">ToDo App</h1>
+    </header>
+    <main>
+      <div class="container">
+        <form id="form-new-task" class="row pb-2">
+          <input
+            type="text"
+            class="col-10"
+            placeholder="What do you have to complete today?"
+            id="input-new-task"
+          />
+          <button class="col-2 btn btn-primary">Add</button>
+        </form>
+
+        <div class="list"></div>
+      </div>
+    </main>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>

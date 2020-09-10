@@ -1,0 +1,22 @@
+/* #form-new-task {
+  height: 70px;
+  padding-bottom: 20px;
+}
+
+#form-new-task button {
+  width: 19%;
+  height: 100%;
+  font-size: 26px;
+}
+
+#form-new-task input {
+  width: 80%;
+  height: 100%;
+  text-align: center;
+  font-size: 30px;
+} */
+
+.task {
+  cursor: pointer;
+  font-size: 20px;
+}
