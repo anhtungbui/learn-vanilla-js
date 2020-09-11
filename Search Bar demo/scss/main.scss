@@ -1,0 +1,75 @@
+@import './base/normalize';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap');
+
+@mixin outline($border-color: red) {
+  border: 1px solid $border-color;
+}
+
+body {
+  @include outline(green);
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    @include outline();
+    width: 80%;
+    .header {
+      display: flex;
+      height: 70px;
+
+      .header__logo {
+        flex: 30%;
+      }
+
+      .header__search {
+        flex: 50%;
+        height: 30px;
+        background: #e9e9e9ec;
+        border: 1px solid gray;
+        border-radius: 15px;
+        margin-top: 10px;
+        padding: 5px 15px 0px 15px;
+
+        .search__input {
+          background: transparent;
+          border: none;
+          width: 80%;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .search__btn {
+          border: none;
+          cursor: pointer;
+          background: transparent;
+        }
+      }
+    }
+
+    .main {
+      .main__results {
+        .results__list {
+          list-style-type: none;
+
+          .list__item {
+            display: flex;
+            border-bottom: 1px solid lightgray;
+
+            .item__symbol {
+              flex: 1;
+              font-weight: bold;
+              padding-left: 20px;
+            }
+
+            .item__company {
+              flex: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

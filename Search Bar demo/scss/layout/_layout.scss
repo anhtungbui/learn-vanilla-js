@@ -1,0 +1,9 @@
+@mixin outline($border-color: red) {
+  border: 1px solid $border-color;
+}
+
+.container {
+  @include outline(green);
+  width: 80%;
+  height: 80%;
+}
