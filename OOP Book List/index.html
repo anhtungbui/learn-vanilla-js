@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <title>OOP Book List</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="bg-success text-center">Book List Manager</h1>
+    </header>
+    <main class="container">
+      <h2>Add Book</h2>
+      <h3 class="bg-success text-white d-none" id="addedStatus">Book Added</h3>
+      <h3 class="bg-warning text-white d-none" id="errorStatus">
+        Please fill in all required fields
+      </h3>
+      <h3 class="bg-danger text-white d-none" id="removedStatus">
+        Book Removed
+      </h3>
+
+      <h3>Book Title</h3>
+      <input class="w-100" type="text" id="inputTitle" />
+
+      <h3>Author</h3>
+      <input class="w-100" type="text" id="inputAuthor" />
+
+      <h3>ISBN</h3>
+      <input class="w-100" type="text" id="inputISBN" />
+
+      <button class="btn btn-success btn-block mt-3" id="btnSubmit">
+        Submit
+      </button>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <tr id="tRow"></tr>
+        </tbody>
+      </table>
+    </main>
+    <script src="/assets/main.js"></script>
+  </body>
+</html>
