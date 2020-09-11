@@ -17,4 +17,11 @@ export default class SearchUI {
   clearSearchField() {
     elements.searchField.value = '';
   }
+
+  renderLoader() {
+    const markup = `<div class="loader"></div>`;
+    // setTimeout(() => {
+    // }, 3000);
+    elements.resultsList.insertAdjacentHTML('beforeend', markup);
+  }
 }
