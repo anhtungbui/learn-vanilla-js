@@ -9,6 +9,7 @@ function addColor(numsOfColors) {
   if (numsOfColors) {
     for (let i = 0; i < numsOfColors; i++) {
       state.newColor = model.generateHex();
+      model.addColor(state.newColor);
       view.addColor(state.newColor);
     }
   }
@@ -23,10 +24,14 @@ elements.formAddColors.addEventListener('click', (e) => {
 
 elements.colorList.addEventListener('click', (e) => {
   e.preventDefault();
+  model.removeColor(e.target.nextElementSibling.innerText);
   view.removeColor(e.target.parentElement);
 });
 
-// Always generate 3 randoms color as soon as the browser loads the script
 window.onload = () => {
-  addColor(3);
+  state.storage = model.checkLocalStorage();
+  if (state.storage) {
+    model.getStoredItems();
+    model.colors.forEach((color) => view.addColor(color));
+  }
 };
