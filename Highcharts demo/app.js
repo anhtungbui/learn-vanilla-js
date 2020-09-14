@@ -18,8 +18,8 @@ let chartData = {
   categories: [],
 };
 
-// fetch('./data.json')
-fetch(fetchUrl)
+// fetch(fetchUrl)
+fetch('./data.json')
   .then((response) => response.json())
   .then((data) => {
     const historyData = data['Time Series (Daily)'];
