@@ -1,3 +1,6 @@
+/** PROTOTYPE v1.0 (W/ ALPHAVANTAGE API) */
+/** NOT IN USE ANYMORE*/
+
 let symbol = '&symbol=GOOG';
 const myKey = config.KEY;
 const apiKey = '&apikey=' + myKey;
